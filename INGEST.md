@@ -29,7 +29,7 @@ The ingest workflow is the standard 10-step process for adding new information t
 
 ### Step 2: Read and Analyze
 
-- Read the entire document thoroughly
+- Read the entire document thoroughly. Use pdf skill for PDFs.
 - Identify the source type (paper, article, video, etc.)
 - Note the publication date, author, and publisher
 - Extract the main thesis or key message
