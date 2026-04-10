@@ -449,7 +449,8 @@ Run lint checks:
 
 This section defines operational constraints and safety guardrails for working with the wiki.
 
-**always use tex** for formula: $a_0 = 100$
+**ALWAYS use tex** for math formula: $a_0 = 100$.
+**DO NOT use unicode math**
 
 ### File Integrity
 
