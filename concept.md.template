@@ -1,0 +1,63 @@
+# Concept Page Template
+
+Concept pages explain abstract ideas, theories, and frameworks.
+
+## Frontmatter
+
+```yaml
+---
+type: concept
+title: "Concept Name"
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: [tag1, tag2, tag3]
+aliases: ["Alternative Term", "Synonym"]
+category: theory | methodology | framework | principle
+---
+```
+
+## Body Structure
+
+```markdown
+# Concept Name
+
+## Definition
+
+Clear, concise definition of the concept (1-2 paragraphs).
+
+## Explanation
+
+Detailed explanation including:
+- Origins and history
+- Core principles
+- Key components or aspects
+- How it works in practice
+
+## Examples
+
+### Example 1
+Description of concrete instance demonstrating the concept.
+
+### Example 2
+Another illustrative case.
+
+## Related Concepts
+
+- [[concept-004|Parent Concept]] - Broader category
+- [[concept-005|Related Concept]] - Similar or contrasting idea
+- [[concept-006|Prerequisite Concept]] - Foundation knowledge
+
+## Sources Discussing This Concept
+
+- [[source-003|Primary Source]] - Original articulation
+- [[source-004|Secondary Source]] - Application or critique
+
+## Applications
+
+- Field 1: How concept applies
+- Field 2: Another application domain
+```
+
+---
+
+*See [AGENTS.md](../AGENTS.md) for the operational protocol.*

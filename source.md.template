@@ -1,0 +1,60 @@
+# Source Page Template
+
+Source pages document the origin of information and link to raw materials.
+
+## Frontmatter
+
+```yaml
+---
+type: source
+title: "Title of the Source Document"
+source_type: paper | article | book | video | dataset
+url: "https://example.com/original-source"
+raw_path: "raw/papers/filename.pdf"
+date_published: YYYY-MM-DD
+date_added: YYYY-MM-DD
+author: "Author Name"
+publisher: "Publication Name"
+tags: [tag1, tag2, tag3]
+status: processed | pending | archived
+---
+```
+
+## Body Structure
+
+```markdown
+# Title of the Source Document
+
+## Summary
+
+Brief overview of the source content (2-4 sentences).
+
+## Key Claims
+
+1. First major claim from this source
+2. Second important claim
+3. Third key finding
+
+## Entities Mentioned
+
+- [[entity-001|Person Name]] - Description of their role
+- [[entity-002|Organization]] - What they do
+- [[entity-003|Location]] - Relevance to source
+
+## Concepts Discussed
+
+- [[concept-001|Concept Name]] - How it's used here
+- [[concept-002|Another Concept]] - Brief explanation
+
+## Key Quotes
+
+> "Important verbatim quote from the source" (p. 42)
+
+## Notes
+
+Additional observations, context, or agent interpretations.
+```
+
+---
+
+*See [AGENTS.md](../AGENTS.md) for the operational protocol.*

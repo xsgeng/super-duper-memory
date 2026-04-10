@@ -1,0 +1,62 @@
+# Entity Page Template
+
+Entity pages aggregate information about specific people, organizations, or things.
+
+## Frontmatter
+
+```yaml
+---
+type: entity
+title: "Entity Name"
+entity_type: person | organization | location | product | event
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: [tag1, tag2]
+aliases: ["Alternative Name", "Abbreviation"]
+---
+```
+
+## Body Structure
+
+```markdown
+# Entity Name
+
+## Overview
+
+Brief description of what/who this entity is (2-3 sentences).
+
+## Details
+
+### For People
+- **Role**: Current position or primary role
+- **Affiliation**: Organization association
+- **Notable Works**: Key contributions
+
+### For Organizations
+- **Type**: Company, non-profit, government, etc.
+- **Industry**: Sector or field
+- **Founded**: Date and location
+
+### For Locations
+- **Type**: City, country, region, etc.
+- **Coordinates**: Latitude/longitude if relevant
+- **Significance**: Why this location matters
+
+## Sources Mentioning This Entity
+
+- [[source-001|Source Title]] - Context of mention
+- [[source-002|Another Source]] - How they relate
+
+## Related Entities
+
+- [[entity-004|Related Person]] - Nature of relationship
+- [[entity-005|Parent Organization]] - Hierarchical connection
+
+## Related Concepts
+
+- [[concept-003|Key Concept]] - How this entity embodies or relates to the concept
+```
+
+---
+
+*See [AGENTS.md](../AGENTS.md) for the operational protocol.*

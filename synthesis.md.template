@@ -1,0 +1,65 @@
+# Synthesis Page Template
+
+Synthesis pages combine multiple sources to generate new insights.
+
+## Frontmatter
+
+```yaml
+---
+type: synthesis
+title: "Synthesis Title"
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: [tag1, tag2]
+scope: topic | question | comparison
+status: draft | review | complete
+---
+```
+
+## Body Structure
+
+```markdown
+# Synthesis Title
+
+## Question/Purpose
+
+What question does this synthesis answer? What gap does it fill?
+
+## Summary
+
+Executive summary of findings (3-5 sentences).
+
+## Key Insights
+
+### Insight 1: Title
+Detailed explanation supported by evidence.
+
+**Evidence**:
+- [[source-005|Source A]] supports this by...
+- [[source-006|Source B]] provides contrasting view...
+
+### Insight 2: Title
+Another synthesized finding.
+
+**Evidence**:
+- [[claim-007|Specific claim]] from [[source-007]]
+- Data from [[entity-008]]
+
+## Sources Consulted
+
+1. [[source-005|Source A]] - Relevant contribution
+2. [[source-006|Source B]] - Key findings
+3. [[source-007|Source C]] - Context or counterpoint
+
+## Methodology
+
+How was this synthesis created? What approach was taken?
+
+## Open Questions
+
+What remains unanswered? What needs further investigation?
+```
+
+---
+
+*See [AGENTS.md](../AGENTS.md) for the operational protocol.*

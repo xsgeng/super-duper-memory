@@ -1,0 +1,34 @@
+# Wiki Index Template
+
+Content-oriented catalog. This is the master index of everything in the wiki. Each page is listed with a link, one-line summary, and metadata like date or source count. Organized by category (sources, entities, concepts, synthesis). The LLM updates this on every ingest. When answering queries, the LLM reads index.md first to find relevant pages, then drills into them. This works well at moderate scale (~100 sources, hundreds of pages) and avoids the need for embedding-based RAG.
+
+## Statistics
+- Total pages: 0
+- Total sources: 0
+- Last updated: YYYY-MM-DD
+
+## Sources
+*List sources here with links and brief descriptions*
+
+Example:
+- [[example-research-intro]] - Knowledge management systems overview (Chen, 2024)
+
+## Entities
+*List entities here with links and brief descriptions*
+
+Example:
+- [[sarah-chen]] - Dr. Sarah Chen, MIT Media Lab researcher
+
+## Concepts
+*List concepts here with links and brief descriptions*
+
+Example:
+- [[emergent-knowledge-structures]] - Knowledge emerging from agent interactions
+- [[network-effects-information-systems]] - Value increasing with connected nodes
+
+## Synthesis
+*List synthesis pages here*
+
+---
+
+*See [AGENTS.md](../AGENTS.md) for the operational protocol.*

@@ -1,0 +1,14 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Obsidian
+wiki/.obsidian/
+
+# Temp files
+*.tmp
+*.swp
+*~
+
+# QA evidence
+.sisyphus/
