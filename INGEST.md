@@ -9,13 +9,13 @@
 
 ## Overview
 
-The ingest workflow is the standard 10-step process for adding new information to the wiki. This protocol ensures every source is properly captured, attributed, and connected to the existing knowledge graph.
+The ingest workflow is the standard process for adding new information to the wiki. This protocol ensures every source is properly captured, attributed, and connected to the existing knowledge graph.
 
 **Inbox Pattern:** Files are initially placed in `inbox/`, then organized into `raw/` subdirectories after ingestion.
 
 ---
 
-## The 10-Step Ingest Workflow
+## The Ingest Workflow
 
 ### Step 1: Acquire Raw Material
 
