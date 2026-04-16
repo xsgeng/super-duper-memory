@@ -107,7 +107,7 @@ Two files in the wiki root serve special navigation purposes:
 
 ## Section 3: Page Templates
 
-All page templates are stored as separate `.template` files in the wiki/ directory:
+All page templates are stored as separate `.template` files:
 
 - **Source pages** - Document the origin of information. See `source.md.template`
 - **Entity pages** - Aggregate information about people, organizations, or things. See `entity.md.template`
