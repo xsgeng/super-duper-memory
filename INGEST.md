@@ -30,6 +30,9 @@ The ingest workflow is the standard process for adding new information to the wi
 ### Step 2: Read and Analyze
 
 - Read the entire document thoroughly. Use pdf skill for PDFs.
+- **For PDFs**: Always extract precise text content using the pdf skill.
+- **Check file length**: Examine the document length before processing.
+- **If document is long** (e.g., academic papers, lengthy articles, books): Delegate to sub-agents for each section or page to create content incrementally.
 - Identify the source type (paper, article, video, etc.)
 - Note the publication date, author, and publisher
 - Extract the main thesis or key message
@@ -41,6 +44,29 @@ The ingest workflow is the standard process for adding new information to the wi
 | `book` | Books, book chapters, monographs |
 | `video` | Video recordings, lectures, podcasts |
 | `dataset` | Data collections, code repositories |
+
+### Step 2.5: Handle Long Documents
+
+When ingesting lengthy documents (academic papers, books, lengthy articles):
+
+1. **Assess document length** - Check total page count or word count
+2. **Determine chunking strategy** - Break into logical sections:
+   - By page ranges (e.g., pages 1-10, 11-20)
+   - By sections/chapters
+   - By thematic units
+3. **Delegate to sub-agents** - For each chunk:
+   - Create a sub-agent task with `run_in_background=true`
+   - Provide context about the chunk's position in the document
+   - Have each sub-agent create partial content
+4. **Assemble results** - Combine sub-agent outputs into the final source page
+5. **Cross-reference** - Ensure consistency between chunks and proper linking
+
+**Example delegation:**
+```
+task(category="deep", load_skills=["pdf"], run_in_background=true, 
+     description="Extract section 1", 
+     prompt="Extract and create content for pages 1-10 of [PDF], focusing on introduction and methodology...")
+```
 
 ---
 
