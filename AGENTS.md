@@ -255,63 +255,7 @@ tags: [llm, architecture, history]
 
 ## Section 5: Ingest Workflow
 
-The ingest workflow is the standard process for adding new information to the wiki. Follow these steps when encountering new sources.
-
-### Step 1: Acquire Raw Material
-- Download the source document (PDF, article, etc.)
-- Store it in the appropriate raw/ subdirectory based on type
-- Preserve original filename when possible
-- If no filename exists, create one using kebab-case with date prefix
-
-### Step 2: Read and Analyze
-- Read the entire document thoroughly
-- Identify the source type (paper, article, video, etc.)
-- Note the publication date, author, and publisher
-- Extract the main thesis or key message
-
-### Step 3: Create Source Page
-- Create a new file in wiki/sources/ directory
-- Use kebab-case naming: `YYYY-MM-DD-source-title.md`
-- Add complete frontmatter with all source-specific fields
-- Write a 2-4 sentence summary of the source
-
-### Step 4: Identify Entities
-- Scan for all named entities (people, organizations, locations)
-- For each unique entity, check if an entity page exists
-- If new, create a page in wiki/entities/ with basic details
-- If existing, update the entity page with new source reference
-- Link entities in the source page to their entity pages
-
-### Step 6: Identify Concepts
-- Identify abstract concepts, theories, or frameworks discussed
-- For each concept, check wiki/concepts/ for existing pages
-- If new, create a concept page with definition and explanation
-- If existing, update with any new information or sources
-- Add concept links to the source page
-
-### Step 7: Create Relationships
-- Add links between related entities in their entity pages
-- Add links between related concepts in their concept pages
-- Cross-reference the source page with related sources
-- Use wiki-links: `[[target-filename|Display Name]]`
-
-### Step 8: Add Key Quotes
-- Extract 3-5 verbatim quotes that are particularly insightful
-- Include page numbers or timestamps when available
-- Format as blockquotes with attribution
-- These provide direct evidence from the source
-
-### Step 9: Update Index
-- Add the new source to index.md
-- List under appropriate category or tag
-- Include brief description for discoverability
-- Link to the source page and key entities
-
-### Step 10: Verify Connectivity
-- Check that all internal links work
-- Verify all referenced pages exist
-- Ensure no orphan pages were created
-- Run a quick lint check (see Section 8)
+The complete ingest workflow is documented in INGEST.md.
 
 ---
 
