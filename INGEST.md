@@ -70,6 +70,8 @@ status: processed  # processed, pending, archived
 
 ### Step 3: Identify Entities
 
+**Delegate sub-agent for this step**
+
 **Scan for:** People, organizations, locations, products, events
 
 **For each entity:**
@@ -91,12 +93,13 @@ aliases: ["Alt Name", "Abbreviation"]
 ```
 
 ### Step 4: Identify Concepts
+**Read index.md:** Get an overview of the wiki repo
 
 **Scan for:** Abstract concepts, theories, frameworks, methodologies
 
 **For each concept:**
 - Check `wiki/concepts/` for existing page
-- Create new page if needed; update existing with new information
+- Create new page if needed; update existing with new information and links
 - Link in source page
 
 **Concept Frontmatter:**
@@ -137,6 +140,7 @@ aliases: ["Synonym", "Related Term"]
 - Entities created: [entity-1, entity-2]
 - Concepts created: [concept-1]
 ```
+**Append only**
 
 ### Step 7: Organize Raw File and Verify
 
