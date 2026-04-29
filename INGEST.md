@@ -21,6 +21,8 @@
 
 ### Step 1: Read and Analyze Source
 
+**Read the index.md**
+
 **From `inbox/` directory:**
 
 **For PDFs:**
